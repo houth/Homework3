@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>A new Game</title>
+	<h1> The Phychic Game </h1>
+
+	<h3> Guess What Letters I am thinking of </h3>
+
+	  <h4> Wins <span id="humanwins"></span> </h4>
+	  <h4> Losses<span id="humanloss"></span> </h4>
+      <h4> Guesses Left<span id="humanguess"></span> </h4>
+      <h4> Your Guesses is <span id="guesses"><span></h4> 
+
+
+</head>
+<body>
+<script type="text/javascript">	
+// variable for the computer 
+var computerChoice=["a","b","c","d","e","f","g","h","i","j","k","l","m","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+
+//this is the variable for guessing 
+var wins=0;
+var Losses=0;
+var left= 0;
+var guessfar=5;
+
+//first we are going to make buttons responsive 
+//lets try to add one to each wins whenever I press a button
+// grabs wins 
+var humanChoice= document.getElementById("humanwins");
+var humanLoss=document.getElementById("humanloss");
+var GuessesLeft=document.getElementById("humanguess");
+var guesses=document.getElementById("guesses");
+
+var random = Math.floor((Math.random()*computerChoice-1))
+var guesses= computerChoice[random];
+
+document.onkeyup=function(event){
+	 humanChoice.textContent=event.key;
+// When the button pressed here - there should be a way for the humanchoice = to the random choice from the computer. 
+
+// When this happens a loop must be done in order for the computer to reset the setting.
+
+// When humanguess = computer guess then humanwins goes up by one 
+
+//else the human loss increases 
+
+
+
+
+
+   
+
+
+
+</script>
+
+</body>
+</html>
